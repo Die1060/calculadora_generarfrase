@@ -79,6 +79,24 @@
 		//Se le pasa como texto el resultado de la suma
 		lugar.innerHTML = (parseInt(operando1) + parseInt(operando2));
 	}, false);
+	
+	// se agregará el código 
+	//código resta
+	let resta = document.getElementById("resta");
+	resta.addEventListener("click", () => {
+		let operando1 = document.getElementById("operando1").value;
+		let operando2 = document.getElementById("operando2").value;
+		lugar.innerHTML = (operando1 - operando2);
+	}, false);
+	//código de multiplicar
+	let producto = document.getElementById("multiplica");
+	producto.addEventListener("click", () => {
+		let operando1 = document.getElementById("operando1").value;
+		let operando2 = document.getElementById("operando2").value;
+		lugar.innerHTML = (operando1 * operando2);
+	}, false);
+	
+	
 </script>
 </body>
 </html>
