@@ -64,7 +64,21 @@
 	<p>Derechos de autor 2018</p>
 </footer>
 <script>
-	
+	//en este apartado se agregar el codigo para ejecutar las funciones de la calculadora
+	//Obtiene el elemento resultado
+	let resultado = document.getElementById("resultado");
+	//Obtiene el segundo elemento hijo de resultado
+	let lugar = resultado.children[1];
+	//Obtiene el elemento suma
+	let suma = document.getElementById("suma");
+	//Añade un evento click al elemento suma
+	suma.addEventListener("click", () => {
+		//Obtiene los elementos operando 1 y 2
+		let operando1 = document.getElementById("operando1").value;
+		let operando2 = document.getElementById("operando2").value;
+		//Se le pasa como texto el resultado de la suma
+		lugar.innerHTML = (parseInt(operando1) + parseInt(operando2));
+	}, false);
 </script>
 </body>
 </html>
