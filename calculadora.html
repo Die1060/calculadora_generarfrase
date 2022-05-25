@@ -105,6 +105,13 @@
 		lugar.innerHTML = (operando1 / operando2);
 	}, false);
 	
+	//Agregando codigo al boton c
+	let limpia=document.getElementById("limpia");
+	limpia.addEventListener("click", () => {
+		document.getElementById("operando1").value = "";
+		document.getElementById("operando2").value = "";
+	}, false);
+	
 	
 </script>
 </body>
